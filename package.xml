@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>Team23_ExternalSources</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">MITL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension provides the possibility to add any external JS or CSS resource via PHP or XML configuration.</summary>
+    <description>Team23 External Sources gives you the freedom to add easily any external source (e.g. from CDN) to your Magento theme. This can be done via XML configuration or directly in PHP code.&#xD;
+&#xD;
+* Add external CSS / JS sources via XML or PHP function&#xD;
+* Light and easy to use&#xD;
+* Full open source&#xD;
+&#xD;
+See attached screenshot for examples, or install extension, go to System -&gt; Admin -&gt; External Sources and read the documentation&#xD;
+&#xD;
+This module is licensed under the MIT license.</description>
+    <notes>First stable release</notes>
+    <authors><author><name>Marc Rochow</name><user>team23</user><email>info@team23.de</email></author></authors>
+    <date>2014-04-14</date>
+    <time>16:16:16</time>
+    <contents><target name="magecommunity"><dir name="Team23"><dir name="ExternalSources"><dir name="Block"><dir name="Html"><file name="Head.php" hash="fc19ae1e9b7f67f202a2598180e71553"/></dir></dir><dir name="Helper"><file name="Data.php" hash="f936ab923976c83d643c91b6213176ce"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5ec2a586ccfbd5b8c378476f5785545b"/><file name="config.xml" hash="5995b4192116da9d814b38df79170842"/><file name="system.xml" hash="433a5cd2c962fc468fb555ff0afde4f6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Team23_ExternalSources.xml" hash="8a06b221d8f46c826626d2ec852df309"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php><package><name>Mage_Core_Modules</name><channel>community</channel><min>1.6.0.0</min><max>1.8.1.0</max></package></required></dependencies>
+</package>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Team23 External Sources
+ *
+ * @category  Team23
+ * @package   Team23_ExternalSources
+ * @version   1.0.0
+ * @copyright 2014 Team23 GmbH & Co. KG (http://www.team23.de)
+ * @license   http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+-->
+
+<config>
+    <tabs>
+        <team23config translate="label" module="externalsources">
+            <label>Team23</label>
+            <sort_order>150</sort_order>
+        </team23config>
+    </tabs>
+
+    <sections>
+        <externalsourcesinfo translate="label" module="externalsources">
+            <label>External Sources</label>
+            <tab>team23config</tab>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <extensioninfo translate="label">
+                    <label>External Sources</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <comment>
+                        <![CDATA[<div style="padding:10px;background-color:#fff;border:1px solid #ddd;margin-bottom:7px;">
+                            <p><strong>Team23 External Sources</strong></p>
+                            <p>This extension provides the possibility to add any external JavaScript or CSS resource via PHP or XML configuration.</p>
+                            <p>&nbsp;</p>
+                            <p><strong>Integration Information</strong></p>
+                            <p>There are 2 possibilietes to add external js/css source to your template, either directly via blocks or via XML configuration. See examples.</p>
+                            <p>&nbsp;</p>
+                            <p><strong>Direct integration in PHP:</strong></p>
+                            <pre>
+public function prepareLayoutBefore(Varien_Event_Observer $observer)
+{
+    $block = $observer->getEvent()->getBlock();
+
+    if ("head" == $block->getNameInLayout())
+    {
+        $block->addExternalJs('//code.jquery.com/jquery-1.11.0.min.js');
+        $block->addExternalCss('http://fonts.googleapis.com/css?family=Droid+Sans:400,700');
+    }
+
+    return $this;
+}</pre>
+                            <p>&nbsp;</p>
+                            <p><strong>XML integration:</strong></p>
+                            <pre>
+&lt;layout version="0.1.0"&gt;
+    &lt;default&gt;
+        &lt;reference name="head"&gt;
+            &lt;action method="addItem"&gt;&lt;type&gt;external_js&lt;/type&gt;&lt;name&gt;//code.jquery.com/jquery-1.11.0.min.js&lt;/name&gt;&lt;/action&gt;
+            &lt;action method="addItem"&gt;&lt;type&gt;external_css&lt;/type&gt;&lt;name&gt;http://fonts.googleapis.com/css?family=Droid+Sans:400,700&lt;/name&gt;&lt;/action&gt;
+        &lt;/reference&gt;
+    &lt;/default&gt;
+&lt;/layout&gt;
+                            </pre>
+                        </div>]]>
+                    </comment>
+                </extensioninfo>
+            </groups>
+        </externalsourcesinfo>
+    </sections>
+</config>

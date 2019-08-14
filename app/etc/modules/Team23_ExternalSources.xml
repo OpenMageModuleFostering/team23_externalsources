@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Team23 External Sources
+ *
+ * @category  Team23
+ * @package   Team23_ExternalSources
+ * @version   1.0.0
+ * @copyright 2014 Team23 GmbH & Co. KG (http://www.team23.de)
+ * @license   http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+-->
+
+<config>
+    <modules>
+        <Team23_ExternalSources>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends/>
+        </Team23_ExternalSources>
+    </modules>
+</config>

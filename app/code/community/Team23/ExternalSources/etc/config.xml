@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Team23 External Sources
+ *
+ * @category  Team23
+ * @package   Team23_ExternalSources
+ * @version   1.0.0
+ * @copyright 2014 Team23 GmbH & Co. KG (http://www.team23.de)
+ * @license   http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+-->
+
+<config>
+    <modules>
+        <Team23_ExternalSources>
+            <version>1.0.0</version>
+        </Team23_ExternalSources>
+    </modules>
+
+    <global>
+        <models>
+            <externalsources>
+                <class>Team23_ExternalSources_Model</class>
+            </externalsources>
+        </models>
+
+        <helpers>
+            <externalsources>
+                <class>Team23_ExternalSources_Helper</class>
+            </externalsources>
+        </helpers>
+
+        <blocks>
+            <externalsources>
+                <class>Team23_ExternalSources_Block</class>
+            </externalsources>
+
+            <page>
+                <rewrite>
+                    <html_head>Team23_ExternalSources_Block_Html_Head</html_head>
+                </rewrite>
+            </page>
+        </blocks>
+    </global>
+</config>
