@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Team23_ExternalSources",
+    "name": "OpenMageModuleFostering\/Team23_ExternalSources",
     "type": "magento-module",
     "license": "MITL",
     "homepage": "",
     "description": "This extension provides the possibility to add any external JS or CSS resource via PHP or XML configuration.",
     "authors": [
-    {
-        "name": "Marc Rochow",
-        "email": "info@team23.de"
-    }
-],
+        {
+            "name": "Marc Rochow",
+            "email": "info@team23.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
