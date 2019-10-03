@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This extension provides the possibility to add any external JS or CSS resource via PHP or XML configuration.
